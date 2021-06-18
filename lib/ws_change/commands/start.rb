@@ -22,7 +22,7 @@ module WsChange
           initialize_workspaces(workspaces)
           workspace_loop(workspaces)
         rescue SystemExit, Interrupt
-          raise
+          puts "exit"
         rescue Exception => e
           #...
           puts "Error"
@@ -72,4 +72,4 @@ module WsChange
       end
     end
   end
-  
+end
