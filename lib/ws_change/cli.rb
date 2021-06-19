@@ -18,7 +18,7 @@ module WsChange
     end
     map %w(--version -v) => :version
 
-    desc 'start [FILE]', 'Command description...'
+    desc 'start [FILE]', 'requiere file config default workspace.json'
     method_option :help, aliases: '-h', type: :boolean,
                          desc: 'Display usage information'
     def start(file="workspace.json")
@@ -30,7 +30,7 @@ module WsChange
       end
     end
 
-    desc 'config', 'Command description...'
+    desc 'config', 'config workspace.json'
     method_option :help, aliases: '-h', type: :boolean,
                          desc: 'Display usage information'
     def config(*)
